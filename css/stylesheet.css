@@ -1,3 +1,10 @@
+/*
+TO DO:
+- Lage nav-bar med dropdown
+    - Nesten i mål, men dropdown-menyen er ikke plassert riktig når den er i nav-bar,
+    kun når den står fritt (som button)
+ */
+
 div.nav-bar {
     font-family: Helvetica, serif;
     list-style-type: none;
