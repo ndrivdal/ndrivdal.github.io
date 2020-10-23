@@ -1,73 +1,80 @@
-/*
-TO DO:
-- Lage nav-bar med dropdown
-    - Nesten i mål, men dropdown-menyen er ikke plassert riktig når den er i nav-bar,
-    kun når den står fritt (som button)
- */
-
-div.nav-bar {
-    font-family: Helvetica, serif;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* Navbar container */
+.navbar {
     overflow: hidden;
     background-color: #333333;
+    font-family: Helvetica, serif;
+    margin: -8px;
 }
 
-div.nav-bar button {
+/* Links inside the navbar */
+.navbar a {
     float: left;
-    border: none;
-    background-color: transparent;
-}
-
-div.nav-bar button {
-    display: block;
+    font-size: 16px;
     color: white;
-    padding: 14px 16px;
     text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-div.nav-bar button:hover {
-    background-color: darkslategrey;
-}
-
-div.nav-bar button.active {
+/* Highlight current website */
+.navbar a.active {
     background-color: seagreen;
 }
 
-div.nav-bar button.float-right {
+/* Put navbar items on right side */
+.navbar .float-right {
     float:right;
 }
 
-.dropdown {
-    display: block;
+/* The dropdown container */
+.navbar .dropdown {
+    float: left;
+    overflow: hidden;
 }
 
+/* The dropdown button */
+.dropdown .dropdown-button {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Add a color on hovered navbar link */
+.navbar a:hover, .dropdown:hover .dropdown-button {
+    background-color: darkslategrey;
+}
+
+/* Dropdown content (hidden by default) */
 .dropdown-content {
-    display:  none;
+    display: none;
     position: absolute;
+    background-color: #F9F9F9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 100;
+    z-index: 1;
 }
 
+/* Links inside the dropdown */
 .dropdown-content a {
+    float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    background-color: white;
+    text-align: left;
 }
 
+/* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #F1F1F1;
+    background-color: #ddd;
 }
 
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.dropdown:hover .dropdown-button {
-    background-color: #3E8E41;
 }
