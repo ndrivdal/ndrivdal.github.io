@@ -3,6 +3,7 @@
     overflow: hidden;
     background-color: #333333;
     font-family: Helvetica, serif;
+    height: 48px;
     margin: -8px;
 }
 
@@ -12,7 +13,7 @@
     font-size: 16px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 16px;
     text-decoration: none;
 }
 
@@ -38,7 +39,7 @@
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 15px 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
